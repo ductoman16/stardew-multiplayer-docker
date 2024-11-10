@@ -25,6 +25,9 @@ do
   fi
 done
 
+dbus-daemon --system
+pulseaudio --system --fail &
+
 # Run extra steps for certain mods
 /opt/configure-remotecontrol-mod.sh
 

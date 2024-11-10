@@ -12,13 +12,14 @@ ENV APP_NAME="StardewValley"
 ENV GAME_PATH="/data/Stardew/game"
 
 ## lib32gcc-s1 is required for steamcmd
-RUN apt-get update && apt-get install -y wget unzip tar strace mono-complete xterm gettext-base jq netcat procps lib32gcc-s1 locales && apt-get clean
+RUN apt-get update && apt-get install -y wget unzip tar strace mono-complete xterm gettext-base jq netcat pulseaudio dbus procps lib32gcc-s1 locales && apt-get clean
 
 # Game + ModLoader 1.6.2 4.0.1
 
 RUN mkdir -p ${GAME_PATH} && \
     mkdir -p /data/nexus && \
-    mkdir -p /data/steamcmd
+    mkdir -p /data/steamcmd && \
+    mkdir -p /run/dbus
 
 ## FOR STEAM VERSION
 RUN wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz -qO steamcmd.tar.gz && \
@@ -51,7 +52,7 @@ RUN wget -qO dotnet.tar.gz https://download.visualstudio.microsoft.com/download/
      rm dotnet.tar.gz &&\
      ln -s /usr/share/dotnet/dotnet /usr/bin/dotnet
 
-RUN wget --user-agent="Mozilla" https://github.com/Pathoschild/SMAPI/releases/download/4.0.8/SMAPI-4.0.8-installer.zip -qO /data/nexus.zip && \
+RUN wget --user-agent="Mozilla" https://github.com/Pathoschild/SMAPI/releases/download/4.1.5/SMAPI-4.1.5-installer.zip -qO /data/nexus.zip && \
     unzip /data/nexus.zip -d /data/nexus/ && \
     SMAPI_INSTALLER=$(find /data/nexus -name 'SMAPI*.*Installer' -type f -path "*/SMAPI * installer/internal/linux/*" | head -n 1) && \
     /bin/bash -c "SMAPI_NO_TERMINAL=true SMAPI_USE_CURRENT_SHELL=true echo -e '2\n\n' | \"$SMAPI_INSTALLER\" --install --game-path \"$GAME_PATH\"" || :

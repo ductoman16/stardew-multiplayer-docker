@@ -1,0 +1,456 @@
+2024-11-09 23:42:16 [s6-init] making user provided files available at /var/run/s6/etc...exited 0.
+2024-11-09 23:42:16 [s6-init] ensuring user provided files have correct perms...exited 0.
+2024-11-09 23:42:16 [fix-attrs.d] applying ownership & permissions fixes...
+2024-11-09 23:42:16 [fix-attrs.d] done.
+2024-11-09 23:42:16 [cont-init.d] executing container initialization scripts...
+2024-11-09 23:42:16 [cont-init.d] 00-app-niceness.sh: executing... 
+2024-11-09 23:42:16 [cont-init.d] 00-app-niceness.sh: exited 0.
+2024-11-09 23:42:16 [cont-init.d] 00-app-script.sh: executing... 
+2024-11-09 23:42:16 [cont-init.d] 00-app-script.sh: exited 0.
+2024-11-09 23:42:16 [cont-init.d] 00-app-user-map.sh: executing... 
+2024-11-09 23:42:16 [cont-init.d] 00-app-user-map.sh: exited 0.
+2024-11-09 23:42:16 [cont-init.d] 00-clean-logmonitor-states.sh: executing... 
+2024-11-09 23:42:16 [cont-init.d] 00-clean-logmonitor-states.sh: exited 0.
+2024-11-09 23:42:16 [cont-init.d] 00-clean-tmp-dir.sh: executing... 
+2024-11-09 23:42:16 [cont-init.d] 00-clean-tmp-dir.sh: exited 0.
+2024-11-09 23:42:16 [cont-init.d] 00-set-app-deps.sh: executing... 
+2024-11-09 23:42:16 [cont-init.d] 00-set-app-deps.sh: exited 0.
+2024-11-09 23:42:16 [cont-init.d] 00-set-home.sh: executing... 
+2024-11-09 23:42:16 [cont-init.d] 00-set-home.sh: exited 0.
+2024-11-09 23:42:16 [cont-init.d] 00-take-config-ownership.sh: executing... 
+2024-11-09 23:42:16 [cont-init.d] 00-take-config-ownership.sh: exited 0.
+2024-11-09 23:42:16 [cont-init.d] 00-xdg-runtime-dir.sh: executing... 
+2024-11-09 23:42:16 [cont-init.d] 00-xdg-runtime-dir.sh: exited 0.
+2024-11-09 23:42:16 [cont-init.d] 10-certs.sh: executing... 
+2024-11-09 23:42:16 [cont-init.d] 10-certs.sh: exited 0.
+2024-11-09 23:42:16 [cont-init.d] 10-cjk-font.sh: executing... 
+2024-11-09 23:42:16 [cont-init.d] 10-cjk-font.sh: exited 0.
+2024-11-09 23:42:16 [cont-init.d] 10-nginx.sh: executing... 
+2024-11-09 23:42:16 [cont-init.d] 10-nginx.sh: exited 0.
+2024-11-09 23:42:16 [cont-init.d] 10-vnc-password.sh: executing... 
+2024-11-09 23:42:16 [cont-init.d] 10-vnc-password.sh: exited 0.
+2024-11-09 23:42:16 [cont-init.d] 10-web-index.sh: executing... 
+2024-11-09 23:42:16 [cont-init.d] 10-web-index.sh: exited 0.
+2024-11-09 23:42:16 [cont-init.d] done.
+2024-11-09 23:42:16 [services.d] starting services
+2024-11-09 23:42:16 [services.d] starting s6-fdholderd...
+2024-11-09 23:42:16 [services.d] starting nginx...
+2024-11-09 23:42:16 [services.d] starting xvfb...
+2024-11-09 23:42:16 [nginx] starting...
+2024-11-09 23:42:16 [xvfb] starting...
+2024-11-09 23:42:17 [services.d] starting certsmonitor...
+2024-11-09 23:42:17 [services.d] starting utils...
+2024-11-09 23:42:17 [certsmonitor] disabling service: secure connection not enabled.
+2024-11-09 23:42:22 [services.d] starting logmonitor...
+2024-11-09 23:42:22 [services.d] starting statusmonitor...
+2024-11-09 23:42:22 [logmonitor] no file to monitor: disabling service...
+2024-11-09 23:42:22 [services.d] starting x11vnc...
+2024-11-09 23:42:22 [statusmonitor] no file to monitor: disabling service...
+2024-11-09 23:42:22 [services.d] starting openbox...
+2024-11-09 23:42:16 stored passwd in file: /root/.vncpass
+2024-11-09 23:42:17 s6-supervise (child): fatal: unable to exec run: No such file or directory
+2024-11-09 23:42:17 s6-supervise utils: warning: unable to spawn ./run - waiting 10 seconds
+2024-11-09 23:42:22 s6-svwait: fatal: timed out
+2024-11-09 23:42:27 s6-supervise (child): fatal: unable to exec run: No such file or directory
+2024-11-09 23:42:27 s6-supervise utils: warning: unable to spawn ./run - waiting 10 seconds
+2024-11-09 23:42:37 s6-supervise (child): fatal: unable to exec run: No such file or directory
+2024-11-09 23:42:37 s6-supervise utils: warning: unable to spawn ./run - waiting 10 seconds
+2024-11-09 23:42:22 [x11vnc] starting...
+2024-11-09 23:42:22 [openbox] starting...
+2024-11-09 23:42:22 10/11/2024 04:42:22 passing arg to libvncserver: -rfbport
+2024-11-09 23:42:22 10/11/2024 04:42:22 passing arg to libvncserver: 5900
+2024-11-09 23:42:22 10/11/2024 04:42:22 passing arg to libvncserver: -rfbportv6
+2024-11-09 23:42:22 10/11/2024 04:42:22 passing arg to libvncserver: 5900
+2024-11-09 23:42:22 10/11/2024 04:42:22 passing arg to libvncserver: -desktop
+2024-11-09 23:42:22 10/11/2024 04:42:22 passing arg to libvncserver: StardewValley
+2024-11-09 23:42:22 10/11/2024 04:42:22 passing arg to libvncserver: -rfbauth
+2024-11-09 23:42:22 10/11/2024 04:42:22 passing arg to libvncserver: /root/.vncpass
+2024-11-09 23:42:22 10/11/2024 04:42:22 x11vnc version: 0.9.14 lastmod: 2015-11-14  pid: 880
+2024-11-09 23:42:22 10/11/2024 04:42:22 Using X display :0
+2024-11-09 23:42:22 10/11/2024 04:42:22 rootwin: 0x50e reswin: 0x200001 dpy: 0xf2759080
+2024-11-09 23:42:22 10/11/2024 04:42:22 
+2024-11-09 23:42:22 10/11/2024 04:42:22 ------------------ USEFUL INFORMATION ------------------
+2024-11-09 23:42:22 10/11/2024 04:42:22 X COMPOSITE available on display, using it for window polling.
+2024-11-09 23:42:22 10/11/2024 04:42:22   To disable this behavior use: '-noxcomposite'
+2024-11-09 23:42:22 10/11/2024 04:42:22 
+2024-11-09 23:42:22 10/11/2024 04:42:22 Wireframing: -wireframe mode is in effect for window moves.
+2024-11-09 23:42:22 10/11/2024 04:42:22   If this yields undesired behavior (poor response, painting
+2024-11-09 23:42:22 10/11/2024 04:42:22   errors, etc) it may be disabled:
+2024-11-09 23:42:22 10/11/2024 04:42:22    - use '-nowf' to disable wireframing completely.
+2024-11-09 23:42:22 10/11/2024 04:42:22    - use '-nowcr' to disable the Copy Rectangle after the
+2024-11-09 23:42:22 10/11/2024 04:42:22      moved window is released in the new position.
+2024-11-09 23:42:22 10/11/2024 04:42:22   Also see the -help entry for tuning parameters.
+2024-11-09 23:42:22 10/11/2024 04:42:22   You can press 3 Alt_L's (Left "Alt" key) in a row to 
+2024-11-09 23:42:22 10/11/2024 04:42:22   repaint the screen, also see the -fixscreen option for
+2024-11-09 23:42:22 10/11/2024 04:42:22   periodic repaints.
+2024-11-09 23:42:22 10/11/2024 04:42:22 GrabServer control via XTEST.
+2024-11-09 23:42:22 10/11/2024 04:42:22 
+2024-11-09 23:42:22 10/11/2024 04:42:22 Scroll Detection: -scrollcopyrect mode is in effect to
+2024-11-09 23:42:22 10/11/2024 04:42:22   use RECORD extension to try to detect scrolling windows
+2024-11-09 23:42:22 10/11/2024 04:42:22   (induced by either user keystroke or mouse input).
+2024-11-09 23:42:22 10/11/2024 04:42:22   If this yields undesired behavior (poor response, painting
+2024-11-09 23:42:22 10/11/2024 04:42:22   errors, etc) it may be disabled via: '-noscr'
+2024-11-09 23:42:22 10/11/2024 04:42:22   Also see the -help entry for tuning parameters.
+2024-11-09 23:42:22 10/11/2024 04:42:22   You can press 3 Alt_L's (Left "Alt" key) in a row to 
+2024-11-09 23:42:22 10/11/2024 04:42:22   repaint the screen, also see the -fixscreen option for
+2024-11-09 23:42:22 10/11/2024 04:42:22   periodic repaints.
+2024-11-09 23:42:22 10/11/2024 04:42:22 
+2024-11-09 23:42:22 10/11/2024 04:42:22 XKEYBOARD: number of keysyms per keycode 7 is greater
+2024-11-09 23:42:22 10/11/2024 04:42:22   than 4 and 51 keysyms are mapped above 4.
+2024-11-09 23:42:22 10/11/2024 04:42:22   Automatically switching to -xkb mode.
+2024-11-09 23:42:22 10/11/2024 04:42:22   If this makes the key mapping worse you can
+2024-11-09 23:42:22 10/11/2024 04:42:22   disable it with the "-noxkb" option.
+2024-11-09 23:42:22 10/11/2024 04:42:22   Also, remember "-remap DEAD" for accenting characters.
+2024-11-09 23:42:22 10/11/2024 04:42:22 
+2024-11-09 23:42:22 10/11/2024 04:42:22 X FBPM extension not supported.
+2024-11-09 23:42:22 Xlib:  extension "DPMS" missing on display ":0".
+2024-11-09 23:42:22 10/11/2024 04:42:22 X display is not capable of DPMS.
+2024-11-09 23:42:22 10/11/2024 04:42:22 --------------------------------------------------------
+2024-11-09 23:42:22 10/11/2024 04:42:22 
+2024-11-09 23:42:22 10/11/2024 04:42:22 Default visual ID: 0x21
+2024-11-09 23:42:22 10/11/2024 04:42:22 Read initial data from X display into framebuffer.
+2024-11-09 23:42:22 10/11/2024 04:42:22 initialize_screen: fb_depth/fb_bpp/fb_Bpl 24/32/4800
+2024-11-09 23:42:22 10/11/2024 04:42:22 
+2024-11-09 23:42:22 10/11/2024 04:42:22 X display :0 is 32bpp depth=24 true color
+2024-11-09 23:42:22 10/11/2024 04:42:22 
+2024-11-09 23:42:22 10/11/2024 04:42:22 Listening for VNC connections on TCP port 5900
+2024-11-09 23:42:22 10/11/2024 04:42:22 Listening for VNC connections on TCP6 port 5900
+2024-11-09 23:42:22 10/11/2024 04:42:22 listen6: bind: Address already in use
+2024-11-09 23:42:22 10/11/2024 04:42:22 Not listening on IPv6 interface.
+2024-11-09 23:42:22 10/11/2024 04:42:22 
+2024-11-09 23:42:22 10/11/2024 04:42:22 Xinerama is present and active (e.g. multi-head).
+2024-11-09 23:42:22 10/11/2024 04:42:22 Xinerama: number of sub-screens: 1
+2024-11-09 23:42:22 10/11/2024 04:42:22 Xinerama: no blackouts needed (only one sub-screen)
+2024-11-09 23:42:22 10/11/2024 04:42:22 
+2024-11-09 23:42:22 10/11/2024 04:42:22 fb read rate: 460 MB/sec
+2024-11-09 23:42:22 10/11/2024 04:42:22 fast read: reset -wait  ms to: 10
+2024-11-09 23:42:22 10/11/2024 04:42:22 fast read: reset -defer ms to: 10
+2024-11-09 23:42:22 10/11/2024 04:42:22 The X server says there are 10 mouse buttons.
+2024-11-09 23:42:22 10/11/2024 04:42:22 screen setup finished.
+2024-11-09 23:42:22 10/11/2024 04:42:22 
+2024-11-09 23:42:22 
+2024-11-09 23:42:22 The VNC desktop is:      e635f8878f74:0
+2024-11-09 23:42:22 PORT=5900
+2024-11-09 23:42:22 
+2024-11-09 23:42:22 ******************************************************************************
+2024-11-09 23:42:22 Have you tried the x11vnc '-ncache' VNC client-side pixel caching feature yet?
+2024-11-09 23:42:22 
+2024-11-09 23:42:22 The scheme stores pixel data offscreen on the VNC viewer side for faster
+2024-11-09 23:42:22 retrieval.  It should work with any VNC viewer.  Try it by running:
+2024-11-09 23:42:22 
+2024-11-09 23:42:22     x11vnc -ncache 10 ...
+2024-11-09 23:42:22 
+2024-11-09 23:42:22 One can also add -ncache_cr for smooth 'copyrect' window motion.
+2024-11-09 23:42:22 More info: http://www.karlrunge.com/x11vnc/faq.html#faq-client-caching
+2024-11-09 23:42:22 
+2024-11-09 23:42:22 Openbox-Message: 04:42:22.948: Unable to make directory '/config/xdg/cache/openbox': Permission denied
+2024-11-09 23:42:22 Openbox-Message: Unable to make directory "/config/xdg/cache/openbox/sessions": Permission denied
+2024-11-09 23:42:24 [services.d] starting app...
+2024-11-09 23:42:24 [app] starting StardewValley...
+2024-11-09 23:42:24 [services.d] done.
+2024-11-09 23:42:24 Configuring /data/Stardew/game/Mods/Always On Server/config.json
+2024-11-09 23:42:24 Configuring /data/Stardew/game/Mods/AutoLoadGame/config.json
+2024-11-09 23:42:24 Removing /data/Stardew/game/Mods/ChatCommands/ (ENABLE_CHATCOMMANDS_MOD=false)
+2024-11-09 23:42:24 Removing /data/Stardew/game/Mods/ConsoleCommands/ (ENABLE_CONSOLECOMMANDS_MOD=false)
+2024-11-09 23:42:24 Removing /data/Stardew/game/Mods/Crops Anytime Anywhere/ (ENABLE_CROPSANYTIMEANYWHERE_MOD=false)
+2024-11-09 23:42:24 Removing /data/Stardew/game/Mods/FriendsForever/ (ENABLE_FRIENDSFOREVER_MOD=false)
+2024-11-09 23:42:24 Removing /data/Stardew/game/Mods/NoFenceDecay/ (ENABLE_NOFENCEDECAY_MOD=false)
+2024-11-09 23:42:24 Removing /data/Stardew/game/Mods/NonDestructiveNPCs/ (ENABLE_NONDESTRUCTIVENPCS_MOD=false)
+2024-11-09 23:42:24 Removing /data/Stardew/game/Mods/SaveBackup/ (ENABLE_SAVEBACKUP_MOD=)
+2024-11-09 23:42:24 Removing /data/Stardew/game/Mods/TimeSpeed/ (ENABLE_TIMESPEED_MOD=false)
+2024-11-09 23:42:25 Configuring /data/Stardew/game/Mods/UnlimitedPlayers/config.json
+2024-11-09 23:42:25 dbus[1006]: Unknown username "systemd-resolve" in message bus configuration file
+2024-11-09 23:42:25 dbus[1006]: Unknown username "systemd-network" in message bus configuration file
+2024-11-09 23:42:25 dbus[1006]: Unknown username "systemd-timesync" in message bus configuration file
+2024-11-09 23:42:25 dbus[1006]: Unknown username "rtkit" in message bus configuration file
+2024-11-09 23:42:25 dbus[1006]: Unknown username "pulse" in message bus configuration file
+2024-11-09 23:42:25 dbus-daemon[1006]: Failed to start message bus: Failed to bind socket "/run/dbus/system_bus_socket": Permission denied
+2024-11-09 23:42:25 -- SMAPI Log: Starting
+2024-11-09 23:42:25 -- SMAPI Log: Waiting for log to appear
+2024-11-09 23:42:25 Running Stardew Valley
+2024-11-09 23:42:25 N: [pulseaudio] main.c: System mode refused for non-root user. Only starting the D-Bus server lookup service.
+2024-11-09 23:42:25 E: [pulseaudio] core-util.c: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+2024-11-09 23:42:25 E: [pulseaudio] core-util.c: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+2024-11-09 23:42:25 E: [pulseaudio] core-util.c: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+2024-11-09 23:42:25 E: [pulseaudio] core-util.c: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+2024-11-09 23:42:25 E: [pulseaudio] core-util.c: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+2024-11-09 23:42:25 E: [pulseaudio] core-util.c: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+2024-11-09 23:42:25 E: [pulseaudio] core-util.c: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+2024-11-09 23:42:25 E: [pulseaudio] core-util.c: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+2024-11-09 23:42:25 E: [pulseaudio] core-util.c: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+2024-11-09 23:42:25 E: [pulseaudio] core-util.c: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+2024-11-09 23:42:25 E: [pulseaudio] core-util.c: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+2024-11-09 23:42:25 W: [pulseaudio] server-lookup.c: Unable to contact D-Bus: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+2024-11-09 23:42:26 chmod: changing permissions of 'start.sh': Operation not permitted
+2024-11-09 23:42:26 /usr/bin/xterm
+2024-11-09 23:42:30 -- SMAPI Log:  Tailing
+2024-11-09 23:42:30 [04:42:27 INFO  SMAPI] SMAPI 4.1.5 with Stardew Valley 1.6.13 build 24313 on Unix 5.15.153.1
+2024-11-09 23:42:30 [04:42:27 INFO  SMAPI] Mods go here: /data/Stardew/game/Mods
+2024-11-09 23:42:30 [04:42:27 TRACE SMAPI] Log started at 2024-11-10T04:42:27 UTC
+2024-11-09 23:42:34 [04:42:34 DEBUG SMAPI] Waiting for game to launch...
+2024-11-09 23:42:35 [04:42:35 ERROR game] Game.Initialize() caught exception initializing XACT.
+2024-11-09 23:42:35 Microsoft.Xna.Framework.Audio.NoAudioHardwareException (0x80004005): OpenAL device could not be initialized, see console output for details.
+2024-11-09 23:42:35    at Microsoft.Xna.Framework.Audio.OpenALSoundController..ctor() in D:\GitlabRunner\builds\Gq5qA5P4\1\ConcernedApe\stardewvalley\MonoGame.Desktop\MonoGame.Framework\Platform\Audio\OpenALSoundController.cs:line 117
+2024-11-09 23:42:35    at Microsoft.Xna.Framework.Audio.OpenALSoundController.EnsureInitialized() in D:\GitlabRunner\builds\Gq5qA5P4\1\ConcernedApe\stardewvalley\MonoGame.Desktop\MonoGame.Framework\Platform\Audio\OpenALSoundController.cs:line 309
+2024-11-09 23:42:35    at Microsoft.Xna.Framework.Audio.SoundEffect.Initialize() in D:\GitlabRunner\builds\Gq5qA5P4\1\ConcernedApe\stardewvalley\MonoGame.Desktop\MonoGame.Framework\Audio\SoundEffect.cs:line 196
+2024-11-09 23:42:35    at Microsoft.Xna.Framework.Audio.SoundEffect..ctor(MiniFormatTag codec, Byte[] buffer, Int32 channels, Int32 sampleRate, Int32 blockAlignment, Int32 loopStart, Int32 loopLength) in D:\GitlabRunner\builds\Gq5qA5P4\1\ConcernedApe\stardewvalley\MonoGame.Desktop\MonoGame.Framework\Audio\SoundEffect.cs:line 153
+2024-11-09 23:42:35    at Microsoft.Xna.Framework.Audio.WaveBank..ctor(AudioEngine audioEngine, String waveBankFilename, Boolean streaming, Int32 offset, Int32 packetsize) in D:\GitlabRunner\builds\Gq5qA5P4\1\ConcernedApe\stardewvalley\MonoGame.Desktop\MonoGame.Framework\Audio\Xact\WaveBank.cs:line 276
+2024-11-09 23:42:35    at StardewValley.Game1.Initialize() in D:\GitlabRunner\builds\Gq5qA5P4\1\ConcernedApe\stardewvalley\Farmer\Farmer\Game1.cs:line 2229
+2024-11-09 23:42:35 [04:42:35 DEBUG SMAPI] Loading mod metadata...
+2024-11-09 23:42:35 [04:42:35 DEBUG SMAPI] Loading mods...
+2024-11-09 23:42:36 [04:42:36 TRACE SMAPI]    Always On Server (from Mods/Always On Server/Always On Server.dll, ID: mikko.Always_On_Server, assembly version: 1.0.0)...
+2024-11-09 23:42:36 [04:42:36 TRACE SMAPI]       Detected reference to StardewModdingAPI.Events.ISpecializedEvents.UnvalidatedUpdateTicked event in assembly Always On Server.dll.
+2024-11-09 23:42:36 [04:42:36 TRACE SMAPI]       Detected direct console access (System.Console type) in assembly Always On Server.dll.
+2024-11-09 23:42:36 [04:42:36 TRACE SMAPI]    Unlimited Players by Armitxes (from Mods/UnlimitedPlayers/UnlimitedPlayers.dll, ID: Armitxes.UnlimitedPlayers, assembly version: 2024.4.16)...
+2024-11-09 23:42:36 [04:42:36 TRACE SMAPI]    Auto Load Game (from Mods/AutoLoadGame/AutoLoadGame.dll, ID: caraxian.AutoLoadGame, assembly version: 1.0.0)...
+2024-11-09 23:42:36 [04:42:36 TRACE SMAPI]       Failed loading PDB for 'AutoLoadGame.dll'. Technical details:
+2024-11-09 23:42:36 Mono.Cecil.Cil.SymbolsNotMatchingException: Symbols were found but are not matching the assembly
+2024-11-09 23:42:36    at Mono.Cecil.ModuleDefinition.ReadSymbols(ISymbolReader reader, Boolean throwIfSymbolsAreNotMaching)
+2024-11-09 23:42:36    at Mono.Cecil.ModuleReader.ReadSymbols(ModuleDefinition module, ReaderParameters parameters)
+2024-11-09 23:42:36    at Mono.Cecil.ModuleReader.CreateModule(Image image, ReaderParameters parameters)
+2024-11-09 23:42:36    at StardewModdingAPI.Framework.ModLoading.AssemblyLoader.GetReferencedLocalAssemblies(FileInfo file, HashSet`1 visitedAssemblyNames, IAssemblyResolver assemblyResolver)+MoveNext() in /home/pathoschild/git/SMAPI/src/SMAPI/Framework/ModLoading/AssemblyLoader.cs:line 280
+2024-11-09 23:42:36 [04:42:36 TRACE SMAPI]    Content Patcher (from Mods/ContentPatcher/ContentPatcher.dll, ID: Pathoschild.ContentPatcher, assembly version: 2.4.3)...
+2024-11-09 23:42:36 [04:42:36 TRACE SMAPI]    Stardew Valley Expanded (from Mods/Stardew Valley Expanded/Stardew Valley Expanded Code/StardewValleyExpanded.dll, ID: FlashShifter.SVECode, assembly version: 1.15.0)...
+2024-11-09 23:42:37 [04:42:37 TRACE SMAPI]       Detected game patcher in assembly StardewValleyExpanded.dll.
+2024-11-09 23:42:37 [04:42:37 TRACE SMAPI]    Farm Type Manager (from Mods/FarmTypeManager/FarmTypeManager.dll, ID: Esca.FarmTypeManager, assembly version: 1.23.0)...
+2024-11-09 23:42:37 [04:42:37 TRACE SMAPI]       Rewrote FarmTypeManager.dll to fix GameLocation.getTileIndexAt method, GameLocation.makeHoeDirt method...
+2024-11-09 23:42:37 [04:42:37 TRACE SMAPI]       Detected game patcher in assembly FarmTypeManager.dll.
+2024-11-09 23:42:37 [04:42:37 TRACE SMAPI]    Stardew Valley Expanded Farm Type Manager (from Mods/Stardew Valley Expanded/[FTM] Stardew Valley Expanded, ID: FlashShifter.SVE-FTM) [content pack]...
+2024-11-09 23:42:37 [04:42:37 TRACE SMAPI]    Stardew Valley Expanded (from Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded, ID: FlashShifter.StardewValleyExpandedCP) [content pack]...
+2024-11-09 23:42:37 [04:42:37 INFO  SMAPI] Loaded 6 mods:
+2024-11-09 23:42:37 [04:42:37 INFO  SMAPI]    Always On Server 1.20.3-unofficial.2-mikkoperkele by funny-snek & Zuberii | A Headless server mod.
+2024-11-09 23:42:37 [04:42:37 INFO  SMAPI]    Auto Load Game 1.0.3 by Caraxian, yatsukiko | Automatically load a save file when starting.
+2024-11-09 23:42:37 [04:42:37 INFO  SMAPI]    Content Patcher 2.4.3 by Pathoschild | Loads content packs which edit game data, images, and maps without changing the game files.
+2024-11-09 23:42:37 [04:42:37 INFO  SMAPI]    Farm Type Manager 1.23.0 by Esca | Allows custom spawning of content from each farm type: forage, large objects, ore, and monsters
+2024-11-09 23:42:37 [04:42:37 INFO  SMAPI]    Stardew Valley Expanded 1.15.3 by FlashShifter, Esca, super-aardvark, and kittycatcasey | Adds coded elements to the game
+2024-11-09 23:42:37 [04:42:37 INFO  SMAPI]    Unlimited Players by Armitxes 2024.4.16 by Armitxes | Remove the maximum player restrictions, build endless cabins.
+2024-11-09 23:42:37 
+2024-11-09 23:42:37 [04:42:37 INFO  SMAPI] Loaded 2 content packs:
+2024-11-09 23:42:37 [04:42:37 INFO  SMAPI]    Stardew Valley Expanded 1.15.3 by FlashShifter | for Content Patcher | An expansive fanmade mod for ConcernedApe's Stardew Valley.
+2024-11-09 23:42:37 [04:42:37 INFO  SMAPI]    Stardew Valley Expanded Farm Type Manager 1.15.3 by FlashShifter | for Farm Type Manager | This FTM pack is for SVE!
+2024-11-09 23:42:37 
+2024-11-09 23:42:37 [04:42:37 INFO  SMAPI]    Patched game code
+2024-11-09 23:42:37 [04:42:37 INFO  SMAPI]    --------------------------------------------------
+2024-11-09 23:42:37 [04:42:37 INFO  SMAPI]       These mods directly change the game code. They're more likely to cause errors or bugs in-game; if
+2024-11-09 23:42:37 [04:42:37 INFO  SMAPI]       your game has issues, try removing these first. Otherwise you can ignore this warning.
+2024-11-09 23:42:37 
+2024-11-09 23:42:37 [04:42:37 INFO  SMAPI]       - Farm Type Manager
+2024-11-09 23:42:37 [04:42:37 INFO  SMAPI]       - Stardew Valley Expanded
+2024-11-09 23:42:37 
+2024-11-09 23:42:37 [04:42:37 INFO  SMAPI]    Bypassed safety checks
+2024-11-09 23:42:37 [04:42:37 INFO  SMAPI]    --------------------------------------------------
+2024-11-09 23:42:37 [04:42:37 INFO  SMAPI]       These mods bypass SMAPI's normal safety checks, so they're more likely to cause errors or save
+2024-11-09 23:42:37 [04:42:37 INFO  SMAPI]       corruption. If your game has issues, try removing these first.
+2024-11-09 23:42:37 
+2024-11-09 23:42:37 [04:42:37 INFO  SMAPI]       - Always On Server
+2024-11-09 23:42:37 
+2024-11-09 23:42:37 [04:42:37 TRACE SMAPI]    Direct console access
+2024-11-09 23:42:37 [04:42:37 TRACE SMAPI]    --------------------------------------------------
+2024-11-09 23:42:37 [04:42:37 TRACE SMAPI]       These mods access the SMAPI console window directly. This is more fragile, and their output may not
+2024-11-09 23:42:37 [04:42:37 TRACE SMAPI]       be logged by SMAPI.
+2024-11-09 23:42:37 
+2024-11-09 23:42:37 [04:42:37 TRACE SMAPI]       - Always On Server
+2024-11-09 23:42:37 
+2024-11-09 23:42:37 [04:42:37 DEBUG SMAPI] Launching mods...
+2024-11-09 23:42:37 [04:42:37 INFO  Unlimited Players by Armitxes] Default player limit set to 10 players.
+2024-11-09 23:42:37 [04:42:37 TRACE SMAPI]    Found mod-provided API (ContentPatcher.Framework.ContentPatcherAPI).
+2024-11-09 23:42:37 [04:42:37 INFO  Stardew Valley Expanded] Starting Installation Checker...
+2024-11-09 23:42:37 [04:42:37 INFO  Stardew Valley Expanded] (Installation Checker provided by shekurika and moe)
+2024-11-09 23:42:37 [04:42:37 TRACE Stardew Valley Expanded] Number of dependencies to check: 5
+2024-11-09 23:42:37 [04:42:37 TRACE Stardew Valley Expanded] InstallationChecker checking SMAPI...
+2024-11-09 23:42:37 [04:42:37 TRACE Stardew Valley Expanded] SMAPI is loaded and up to date.
+2024-11-09 23:42:37 [04:42:37 TRACE Stardew Valley Expanded] InstallationChecker checking Content Patcher...
+2024-11-09 23:42:37 [04:42:37 TRACE Stardew Valley Expanded] Content Patcher is loaded and up to date.
+2024-11-09 23:42:37 [04:42:37 TRACE Stardew Valley Expanded] InstallationChecker checking Farm Type Manager (FTM)...
+2024-11-09 23:42:37 [04:42:37 TRACE Stardew Valley Expanded] Farm Type Manager (FTM) is loaded and up to date.
+2024-11-09 23:42:37 [04:42:37 TRACE Stardew Valley Expanded] InstallationChecker checking [CP] Stardew Valley Expanded...
+2024-11-09 23:42:37 [04:42:37 TRACE Stardew Valley Expanded] [CP] Stardew Valley Expanded is loaded and up to date.
+2024-11-09 23:42:37 [04:42:37 TRACE Stardew Valley Expanded] InstallationChecker checking [FTM] Stardew Valley Expanded...
+2024-11-09 23:42:37 [04:42:37 TRACE Stardew Valley Expanded] [FTM] Stardew Valley Expanded is loaded and up to date.
+2024-11-09 23:42:37 [04:42:37 TRACE Stardew Valley Expanded] Number of missing mods: 0
+2024-11-09 23:42:37 [04:42:37 TRACE Stardew Valley Expanded] Number of out of date mods: 0
+2024-11-09 23:42:37 [04:42:37 INFO  Stardew Valley Expanded] Installation check completed. Everything seems fine!
+2024-11-09 23:42:37 [04:42:37 TRACE Stardew Valley Expanded] Replacing sound cue "AmbientLocationSounds.engine" with a wrapper for volume control.
+2024-11-09 23:42:37 [04:42:37 TRACE game] Registered event command: SVE_BadlandsDeath
+2024-11-09 23:42:37 [04:42:37 TRACE Stardew Valley Expanded] Applying Harmony patch "DisableShadowAttacks": postfixing SDV method "AdventureGuild.killListLine(string, int, int)".
+2024-11-09 23:42:37 [04:42:37 TRACE Stardew Valley Expanded] Applying Harmony Patch: HarmonyPatch_Mountain
+2024-11-09 23:42:38 [04:42:38 TRACE Stardew Valley Expanded] Applying Harmony patch "HarmonyPatch_CustomFishPondColors": postfixing SDV method "FishPond.doFishSpecificWaterColoring()".
+2024-11-09 23:42:38 [04:42:38 TRACE Stardew Valley Expanded] Applying Harmony patch "HarmonyPatch_FarmComputerLocations": postfixing SDV method "Farm.getTotalCrops()".
+2024-11-09 23:42:38 [04:42:38 TRACE Stardew Valley Expanded] Applying Harmony patch "HarmonyPatch_FarmComputerLocations": postfixing SDV method "Farm.getTotalCropsReadyForHarvest()".
+2024-11-09 23:42:38 [04:42:38 TRACE Stardew Valley Expanded] Applying Harmony patch "HarmonyPatch_FarmComputerLocations": postfixing SDV method "Farm.getTotalUnwateredCrops()".
+2024-11-09 23:42:38 [04:42:38 TRACE Stardew Valley Expanded] Applying Harmony patch "HarmonyPatch_FarmComputerLocations": postfixing SDV method "Farm.getTotalOpenHoeDirt()".
+2024-11-09 23:42:38 [04:42:38 TRACE Stardew Valley Expanded] Applying Harmony patch "HarmonyPatch_FarmComputerLocations": postfixing SDV method "Farm.getTotalGreenhouseCropsReadyForHarvest()".
+2024-11-09 23:42:38 [04:42:38 TRACE Stardew Valley Expanded] Applying Harmony patch "HarmonyPatch_PiggyBank": postfixing SDV method "Object_checkForAction(Farmer, bool)".
+2024-11-09 23:42:38 [04:42:38 TRACE Stardew Valley Expanded] Applying Harmony patch "HarmonyPatch_FixDesertBusWarp": transpiling SDV method "Desert.resetLocalState()".
+2024-11-09 23:42:38 [04:42:38 TRACE Stardew Valley Expanded] Applying Harmony patch "HarmonyPatch_DesertSecretNoteTile": prefixing SDV method "Desert.checkForBuriedItem(int, int, bool, bool, Farmer)".
+2024-11-09 23:42:38 [04:42:38 TRACE Stardew Valley Expanded] Applying Harmony patch "HarmonyPatch_DesertFishingItems": postfixing SDV method "Desert.getFish".
+2024-11-09 23:42:38 [04:42:38 TRACE Stardew Valley Expanded] Applying Harmony patch "HarmonyPatch_CustomGrangeJudging": prefixing SDV method "Event.initiateGrangeJudging()".
+2024-11-09 23:42:38 [04:42:38 TRACE Stardew Valley Expanded] Applying Harmony patch "HarmonyPatch_CustomGrangeJudging": postfixing SDV method "Event.interpretGrangeResults()".
+2024-11-09 23:42:38 [04:42:38 TRACE Stardew Valley Expanded] Applying Harmony patch "HarmonyPatch_MovieTheaterNPCs": postfixing SDV method "MovieTheater.checkAction(Location, Rectangle, Farmer)".
+2024-11-09 23:42:38 [04:42:38 TRACE Stardew Valley Expanded] Applying Harmony patch "HarmonyPatch_MovieTheaterNPCs": transpiling SDV method "Utility.CheckForCharacterAtTile(Vector2, Farmer)".
+2024-11-09 23:42:38 [04:42:38 TRACE Stardew Valley Expanded] Applying Harmony patch "HarmonyPatch_DestroyableBushesSVE": postfixing SDV method "Bush.isDestroyable(GameLocation, Vector2)".
+2024-11-09 23:42:38 [04:42:38 TRACE Stardew Valley Expanded] Applying Harmony patch "HarmonyPatch_TMXLLoadMapFacingDirection": prefixing SDV method "Game1.warpFarmer(LocationRequest, int, int, int)".
+2024-11-09 23:42:38 [04:42:38 TRACE Stardew Valley Expanded] Applying Harmony patch "HarmonyPatch_UntimedSpecialOrders": postfixing SDV method "SpecialOrders.IsTimedQuest()".
+2024-11-09 23:42:38 [04:42:38 TRACE Stardew Valley Expanded] Applying Harmony patch "HarmonyPatch_FixCommunityShortcuts": transpiling SDV method "Forest.showCommunityUpgradeShortcuts()".
+2024-11-09 23:42:38 [04:42:38 TRACE Stardew Valley Expanded] Applying Harmony patch "HarmonyPatch_FixCommunityShortcuts": transpiling SDV method "Beach.showCommunityUpgradeShortcuts(GameLocation, bool)".
+2024-11-09 23:42:38 [04:42:38 TRACE Farm Type Manager] Applying Harmony patch "HarmonyPatch_DisableFurniturePickup": postfixing 3 implementations of SDV method "Furniture.canBeRemoved(Farmer)".
+2024-11-09 23:42:38 [04:42:38 TRACE Farm Type Manager] Applying Harmony patch "HarmonyPatch_InstantKillImmunity": prefixing SDV method "HungryFrogCompanion.tongueReachedMonster".
+2024-11-09 23:42:38 [04:42:38 TRACE Farm Type Manager] Applying Harmony patch "HarmonyPatch_OptimizeMonsterCode": prefixing SDV method "GameLocation.isCollidingPosition".
+2024-11-09 23:42:38 [04:42:38 TRACE Farm Type Manager] Applying Harmony patch "HarmonyPatch_OptimizeMonsterCode": prefixing SDV method "Monster.findPlayer".
+2024-11-09 23:42:38 [04:42:38 TRACE Farm Type Manager] Applying Harmony patch "HarmonyPatch_OptimizeMonsterCode": postfixing SDV method "Monster.findPlayer".
+2024-11-09 23:42:38 [04:42:38 TRACE Farm Type Manager] Applying Harmony patch "HarmonyPatch_StunImmunity": prefixing SDV method "DebuffingProjectile.behaviorOnCollisionWithMonster".
+2024-11-09 23:42:38 [04:42:38 TRACE Farm Type Manager] Applying Harmony patch "HarmonyPatch_ToggleExtraLoot": postfixing 12 implementations of SDV method "Monster.getExtraDropitems()".
+2024-11-09 23:42:39 [04:42:39 TRACE Farm Type Manager] Applying Harmony patch "HarmonyPatch_UpdateCursorOverPlacedItem": postfixing SDV method "Utility.canGrabSomethingFromHere(int, int, Farmer)".
+2024-11-09 23:42:39 [04:42:39 DEBUG SMAPI] Mods loaded and ready!
+2024-11-09 23:42:39 [04:42:39 TRACE SMAPI] Checking for updates...
+2024-11-09 23:42:39 [04:42:39 ALERT SMAPI] You can update SMAPI to 4.1.6: https://smapi.io
+2024-11-09 23:42:39 [04:42:39 TRACE SMAPI]    Checking for updates to 8 mods...
+2024-11-09 23:42:39 [04:42:39 TRACE SMAPI] Got update-check errors for some mods:
+2024-11-09 23:42:39    Stardew Valley Expanded: The value '???' isn't a valid Nexus mod ID, must be an integer ID.
+2024-11-09 23:42:39    Stardew Valley Expanded: The value '???' isn't a valid Nexus mod ID, must be an integer ID.
+2024-11-09 23:42:39    Stardew Valley Expanded Farm Type Manager: The value '???' isn't a valid Nexus mod ID, must be an integer ID.
+2024-11-09 23:42:39    Unlimited Players by Armitxes: The CurseForge mod with ID '362847' has no valid versions.
+2024-11-09 23:42:39 
+2024-11-09 23:42:39 [04:42:39 ALERT SMAPI] You can update 2 mods:
+2024-11-09 23:42:39 [04:42:39 ALERT SMAPI]    Content Patcher 2.4.4: https://www.nexusmods.com/stardewvalley/mods/1915 (you have 2.4.3)
+2024-11-09 23:42:39 [04:42:39 ALERT SMAPI]    Stardew Valley Expanded 1.15.4: https://www.nexusmods.com/stardewvalley/mods/3753 (you have 1.15.3)
+2024-11-09 23:42:39 [04:42:39 TRACE game] setGameMode( 'titleScreenGameMode (0)' )
+2024-11-09 23:42:40 [04:42:40 TRACE game] path '/config/xdg/config/StardewValley/startup_preferences' did not exist and will be created
+2024-11-09 23:42:40 [04:42:40 ERROR game] Oops! Steam achievements won't work because Steam isn't loaded. You can launch the game through Steam to fix that.
+2024-11-09 23:42:40 [04:42:40 INFO  SMAPI] Type 'help' for help, or 'help <cmd>' for a command's usage
+2024-11-09 23:42:40 [04:42:40 INFO  Unlimited Players by Armitxes] 
+2024-11-09 23:42:40 [SERVER] Adjusting limit to 10 players.
+2024-11-09 23:42:40 [04:42:40 TRACE Farm Type Manager] Optional API not found: Generic Mod Config Menu (GMCM).
+2024-11-09 23:42:40 [04:42:40 TRACE Farm Type Manager] API not found: Expanded Preconditions Utility (EPU).
+2024-11-09 23:42:40 [04:42:40 TRACE Farm Type Manager] API not found: Dynamic Game Assets (DGA).
+2024-11-09 23:42:40 [04:42:40 TRACE Farm Type Manager] Accessed mod-provided API (ContentPatcher.Framework.ContentPatcherAPI) for Content Patcher.
+2024-11-09 23:42:40 [04:42:40 TRACE Farm Type Manager] API found: Content Patcher (CP).
+2024-11-09 23:42:40 [04:42:40 TRACE Farm Type Manager] Mod not found: Monsters The Framework (MTF).
+2024-11-09 23:42:40 [04:42:40 TRACE Farm Type Manager] Optional API not found: Item Extensions.
+2024-11-09 23:42:40 [04:42:40 TRACE game] Registered trigger action handler 'Pathoschild.ContentPatcher_MigrateIds'.
+2024-11-09 23:42:43 [04:42:43 TRACE Content Patcher] Requested cache invalidation for all assets matching a predicate.
+2024-11-09 23:42:43 [04:42:43 TRACE SMAPI] Content Patcher edited LooseSprites/Cursors (for the 'Stardew Valley Expanded' content pack).
+2024-11-09 23:42:43 [04:42:43 TRACE SMAPI] Content Patcher edited Data/BigCraftables (for the 'Stardew Valley Expanded' content pack).
+2024-11-09 23:42:43 [04:42:43 TRACE SMAPI] Content Patcher edited Data/Objects (for the 'Stardew Valley Expanded' content pack).
+2024-11-09 23:42:43 [04:42:43 TRACE SMAPI] Content Patcher edited Data/Crops (for the 'Stardew Valley Expanded' content pack).
+2024-11-09 23:42:43 [04:42:43 TRACE SMAPI] Content Patcher edited Data/Characters (for the 'Stardew Valley Expanded' content pack).
+2024-11-09 23:42:43 [04:42:43 TRACE SMAPI] Content Patcher edited Data/Weapons (for the 'Stardew Valley Expanded' content pack).
+2024-11-09 23:42:43 [04:42:43 TRACE SMAPI] Content Patcher edited Data/Buildings (for the 'Stardew Valley Expanded' content pack).
+2024-11-09 23:42:43 [04:42:43 TRACE SMAPI] Content Patcher edited Data/FarmAnimals (for the 'Stardew Valley Expanded' content pack).
+2024-11-09 23:42:43 [04:42:43 TRACE SMAPI] Content Patcher edited Data/FruitTrees (for the 'Stardew Valley Expanded' content pack).
+2024-11-09 23:42:43 [04:42:43 TRACE SMAPI] Content Patcher edited Data/Locations.
+2024-11-09 23:42:43 [04:42:43 TRACE SMAPI] Content Patcher edited Data/Locations (for the 'Stardew Valley Expanded' content pack).
+2024-11-09 23:42:43 [04:42:43 TRACE SMAPI] Content Patcher edited Data/LocationContexts (for the 'Stardew Valley Expanded' content pack).
+2024-11-09 23:42:43 [04:42:43 TRACE SMAPI] Content Patcher edited Data/NPCGiftTastes (for the 'Stardew Valley Expanded' content pack).
+2024-11-09 23:42:43 [04:42:43 TRACE SMAPI] Content Patcher edited Data/CraftingRecipes (for the 'Stardew Valley Expanded' content pack).
+2024-11-09 23:42:43 [04:42:43 TRACE SMAPI] Content Patcher edited Data/CookingRecipes (for the 'Stardew Valley Expanded' content pack).
+2024-11-09 23:42:43 [04:42:43 TRACE SMAPI] Content Patcher edited Data/JukeboxTracks (for the 'Stardew Valley Expanded' content pack).
+2024-11-09 23:42:43 [04:42:43 TRACE SMAPI] Content Patcher edited Strings/StringsFromCSFiles (for the 'Stardew Valley Expanded' content pack).
+2024-11-09 23:42:43 [04:42:43 TRACE SMAPI] Content Patcher edited Data/AudioChanges (for the 'Stardew Valley Expanded' content pack).
+2024-11-09 23:42:43 [04:42:43 ERROR game] Error loading sound: /data/Stardew/game/Mods/Stardew Valley Expanded/[CP] Stardew Valley Expanded/assets/Music/CrimsonSands.ogg
+2024-11-09 23:42:43 Microsoft.Xna.Framework.Audio.NoAudioHardwareException (0x80004005): Audio has failed to initialize. Call SoundEffect.Initialize() before sound operation to get more specific errors.
+2024-11-09 23:42:43    at Microsoft.Xna.Framework.Audio.SoundEffect..ctor() in D:\GitlabRunner\builds\Gq5qA5P4\1\ConcernedApe\stardewvalley\MonoGame.Desktop\MonoGame.Framework\Audio\SoundEffect.cs:line 88
+2024-11-09 23:42:43    at Microsoft.Xna.Framework.Audio.OggStreamSoundEffect..ctor(String filename) in D:\GitlabRunner\builds\Gq5qA5P4\1\ConcernedApe\stardewvalley\MonoGame.Desktop\MonoGame.Framework\Audio\SoundEffect.cs:line 22
+2024-11-09 23:42:43    at StardewValley.Audio.AudioCueModificationManager.ApplyCueModification(String key) in D:\GitlabRunner\builds\Gq5qA5P4\1\ConcernedApe\stardewvalley\Farmer\Farmer\Audio\AudioCueModificationManager.cs:line 92
+2024-11-09 23:42:43 [04:42:43 ERROR SMAPI] An error occurred while propagating asset changes. Error details:
+2024-11-09 23:42:43 NullReferenceException: Object reference not set to an instance of an object.
+2024-11-09 23:42:43    at StardewValley.Audio.AudioCueModificationManager.ApplyCueModification(String key) in D:\GitlabRunner\builds\Gq5qA5P4\1\ConcernedApe\stardewvalley\Farmer\Farmer\Audio\AudioCueModificationManager.cs:line 121
+2024-11-09 23:42:43    at StardewValley.Audio.AudioCueModificationManager.ApplyAllCueModifications() in D:\GitlabRunner\builds\Gq5qA5P4\1\ConcernedApe\stardewvalley\Farmer\Farmer\Audio\AudioCueModificationManager.cs:line 28
+2024-11-09 23:42:43    at StardewModdingAPI.Metadata.CoreAssetPropagator.PropagateOther(IAssetName assetName, Type type, Boolean ignoreWorld, Boolean& changedWarpRoutes) in /home/pathoschild/git/SMAPI/src/SMAPI/Metadata/CoreAssetPropagator.cs:line 307
+2024-11-09 23:42:43    at StardewModdingAPI.Metadata.CoreAssetPropagator.Propagate(IList`1 contentManagers, IDictionary`2 assets, Boolean ignoreWorld, IDictionary`2& propagatedAssets, Boolean& changedWarpRoutes) in /home/pathoschild/git/SMAPI/src/SMAPI/Metadata/CoreAssetPropagator.cs:line 117
+2024-11-09 23:42:43 [04:42:43 TRACE SMAPI] Invalidated 19 asset names (Data/AudioChanges, Data/BigCraftables, Data/Boots, Data/Buildings, Data/Characters, Data/CookingRecipes, Data/CraftingRecipes, Data/Crops, Data/FarmAnimals, Data/FruitTrees, Data/Furniture, Data/JukeboxTracks, Data/LocationContexts, Data/Locations, Data/NPCGiftTastes, Data/Objects, Data/Weapons, LooseSprites/Cursors, Strings/StringsFromCSFiles).
+2024-11-09 23:42:43 Propagated 18 core assets (Data/BigCraftables, Data/Boots, Data/Buildings, Data/Characters, Data/CookingRecipes, Data/CraftingRecipes, Data/Crops, Data/FarmAnimals, Data/FruitTrees, Data/Furniture, Data/JukeboxTracks, Data/LocationContexts, Data/Locations, Data/NPCGiftTastes, Data/Objects, Data/Weapons, LooseSprites/Cursors, Strings/StringsFromCSFiles).
+2024-11-09 23:42:43 [04:42:43 TRACE Content Patcher] Requested cache invalidation for 'Data/Locations'.
+2024-11-09 23:42:43 [04:42:43 TRACE SMAPI] Content Patcher edited Data/Locations.
+2024-11-09 23:42:43 [04:42:43 TRACE SMAPI] Content Patcher edited Data/Locations (for the 'Stardew Valley Expanded' content pack).
+2024-11-09 23:42:43 [04:42:43 TRACE SMAPI] Invalidated 1 asset names (Data/Locations).
+2024-11-09 23:42:43 Propagated 1 core assets (Data/Locations).
+2024-11-09 23:42:44 [04:42:44 INFO  Auto Load Game] Loading Save: EXPANDED_390886426
+2024-11-09 23:42:44 [04:42:44 TRACE game] gameMode was 'titleScreenGameMode (0)', set to 'loadingMode (6)'.
+2024-11-09 23:42:44 [04:42:44 TRACE SMAPI] Game loader synchronizing...
+2024-11-09 23:42:44 [04:42:44 TRACE game] getLoadEnumerator('EXPANDED_390886426')
+2024-11-09 23:42:44 [04:42:44 TRACE SMAPI] Synchronizing 'Load_ReadSave' task...
+2024-11-09 23:42:44 [04:42:44 ERROR SMAPI] Critical app domain exception: System.NullReferenceException: Object reference not set to an instance of an object.
+2024-11-09 23:42:44    at Microsoft.Xna.Framework.Audio.OggStreamSoundEffect.Dispose(Boolean disposing) in D:\GitlabRunner\builds\Gq5qA5P4\1\ConcernedApe\stardewvalley\MonoGame.Desktop\MonoGame.Framework\Audio\SoundEffect.cs:line 50
+2024-11-09 23:42:44    at Microsoft.Xna.Framework.Audio.SoundEffect.Finalize() in D:\GitlabRunner\builds\Gq5qA5P4\1\ConcernedApe\stardewvalley\MonoGame.Desktop\MonoGame.Framework\Audio\SoundEffect.cs:line 291
+2024-11-09 23:44:06 10/11/2024 04:44:06 Got connection from client 127.0.0.1
+2024-11-09 23:44:06 10/11/2024 04:44:06   other clients:
+2024-11-09 23:44:06 10/11/2024 04:44:06 Got 'ws' WebSockets handshake
+2024-11-09 23:44:06 10/11/2024 04:44:06 Got protocol: binary
+2024-11-09 23:44:06 10/11/2024 04:44:06   - webSocketsHandshake: using binary/raw encoding
+2024-11-09 23:44:06 10/11/2024 04:44:06   - WebSockets client version hybi-13
+2024-11-09 23:44:06 10/11/2024 04:44:06 Disabled X server key autorepeat.
+2024-11-09 23:44:06 10/11/2024 04:44:06   to force back on run: 'xset r on' (3 times)
+2024-11-09 23:44:06 10/11/2024 04:44:06 incr accepted_client=1 for 127.0.0.1:50448  sock=11
+2024-11-09 23:44:07 10/11/2024 04:44:07 Client Protocol Version 3.8
+2024-11-09 23:44:07 10/11/2024 04:44:07 Protocol version sent 3.8, using 3.8
+2024-11-09 23:44:07 10/11/2024 04:44:07 rfbProcessClientSecurityType: executing handler for type 2
+2024-11-09 23:44:11 10/11/2024 04:44:11 Pixel format for client 127.0.0.1:
+2024-11-09 23:44:11 10/11/2024 04:44:11   32 bpp, depth 24, little endian
+2024-11-09 23:44:11 10/11/2024 04:44:11   true colour: max r 255 g 255 b 255, shift r 16 g 8 b 0
+2024-11-09 23:44:11 10/11/2024 04:44:11 no translation needed
+2024-11-09 23:44:11 10/11/2024 04:44:11 Enabling NewFBSize protocol extension for client 127.0.0.1
+2024-11-09 23:44:11 10/11/2024 04:44:11 Enabling full-color cursor updates for client 127.0.0.1
+2024-11-09 23:44:11 10/11/2024 04:44:11 Using image quality level 6 for client 127.0.0.1
+2024-11-09 23:44:11 10/11/2024 04:44:11 Using JPEG subsampling 0, Q79 for client 127.0.0.1
+2024-11-09 23:44:11 10/11/2024 04:44:11 Using compression level 9 for client 127.0.0.1
+2024-11-09 23:44:11 10/11/2024 04:44:11 Enabling LastRect protocol extension for client 127.0.0.1
+2024-11-09 23:44:11 10/11/2024 04:44:11 rfbProcessClientNormalMessage: ignoring unsupported encoding type Enc(0xFFFFFECC)
+2024-11-09 23:44:11 10/11/2024 04:44:11 Using tight encoding for client 127.0.0.1
+2024-11-09 23:44:11 10/11/2024 04:44:11 client_set_net: 127.0.0.1  0.0022
+2024-11-09 23:44:15 10/11/2024 04:44:15 created selwin: 0x20002a
+2024-11-09 23:44:15 10/11/2024 04:44:15 called initialize_xfixes()
+2024-11-09 23:42:47 s6-supervise (child): fatal: unable to exec run: No such file or directory
+2024-11-09 23:42:47 s6-supervise utils: warning: unable to spawn ./run - waiting 10 seconds
+2024-11-09 23:42:57 s6-supervise (child): fatal: unable to exec run: No such file or directory
+2024-11-09 23:42:57 s6-supervise utils: warning: unable to spawn ./run - waiting 10 seconds
+2024-11-09 23:43:07 s6-supervise (child): fatal: unable to exec run: No such file or directory
+2024-11-09 23:43:07 s6-supervise utils: warning: unable to spawn ./run - waiting 10 seconds
+2024-11-09 23:43:17 s6-supervise (child): fatal: unable to exec run: No such file or directory
+2024-11-09 23:43:17 s6-supervise utils: warning: unable to spawn ./run - waiting 10 seconds
+2024-11-09 23:43:27 s6-supervise (child): fatal: unable to exec run: No such file or directory
+2024-11-09 23:43:27 s6-supervise utils: warning: unable to spawn ./run - waiting 10 seconds
+2024-11-09 23:43:37 s6-supervise (child): fatal: unable to exec run: No such file or directory
+2024-11-09 23:43:37 s6-supervise utils: warning: unable to spawn ./run - waiting 10 seconds
+2024-11-09 23:43:47 s6-supervise (child): fatal: unable to exec run: No such file or directory
+2024-11-09 23:43:47 s6-supervise utils: warning: unable to spawn ./run - waiting 10 seconds
+2024-11-09 23:43:57 s6-supervise (child): fatal: unable to exec run: No such file or directory
+2024-11-09 23:43:57 s6-supervise utils: warning: unable to spawn ./run - waiting 10 seconds
+2024-11-09 23:44:07 s6-supervise (child): fatal: unable to exec run: No such file or directory
+2024-11-09 23:44:07 s6-supervise utils: warning: unable to spawn ./run - waiting 10 seconds
+2024-11-09 23:44:17 s6-supervise (child): fatal: unable to exec run: No such file or directory
+2024-11-09 23:44:17 s6-supervise utils: warning: unable to spawn ./run - waiting 10 seconds
+2024-11-09 23:44:27 s6-supervise (child): fatal: unable to exec run: No such file or directory
+2024-11-09 23:44:27 s6-supervise utils: warning: unable to spawn ./run - waiting 10 seconds
+2024-11-09 23:44:37 s6-supervise (child): fatal: unable to exec run: No such file or directory
+2024-11-09 23:44:37 s6-supervise utils: warning: unable to spawn ./run - waiting 10 seconds
+2024-11-09 23:44:47 s6-supervise (child): fatal: unable to exec run: No such file or directory
+2024-11-09 23:44:47 s6-supervise utils: warning: unable to spawn ./run - waiting 10 seconds
+2024-11-09 23:44:57 s6-supervise (child): fatal: unable to exec run: No such file or directory
+2024-11-09 23:44:57 s6-supervise utils: warning: unable to spawn ./run - waiting 10 seconds
+2024-11-09 23:45:07 s6-supervise (child): fatal: unable to exec run: No such file or directory
+2024-11-09 23:45:07 s6-supervise utils: warning: unable to spawn ./run - waiting 10 seconds
+2024-11-09 23:45:17 s6-supervise (child): fatal: unable to exec run: No such file or directory
+2024-11-09 23:45:17 s6-supervise utils: warning: unable to spawn ./run - waiting 10 seconds
+2024-11-09 23:45:27 s6-supervise (child): fatal: unable to exec run: No such file or directory
+2024-11-09 23:45:27 s6-supervise utils: warning: unable to spawn ./run - waiting 10 seconds
+2024-11-09 23:45:37 s6-supervise (child): fatal: unable to exec run: No such file or directory
+2024-11-09 23:45:37 s6-supervise utils: warning: unable to spawn ./run - waiting 10 seconds
+2024-11-09 23:45:48 s6-supervise (child): fatal: unable to exec run: No such file or directory
+2024-11-09 23:45:48 s6-supervise utils: warning: unable to spawn ./run - waiting 10 seconds
+2024-11-09 23:45:58 s6-supervise (child): fatal: unable to exec run: No such file or directory
+2024-11-09 23:45:58 s6-supervise utils: warning: unable to spawn ./run - waiting 10 seconds
+2024-11-09 23:46:08 s6-supervise (child): fatal: unable to exec run: No such file or directory
+2024-11-09 23:46:08 s6-supervise utils: warning: unable to spawn ./run - waiting 10 seconds
+2024-11-09 23:46:18 s6-supervise (child): fatal: unable to exec run: No such file or directory
+2024-11-09 23:46:18 s6-supervise utils: warning: unable to spawn ./run - waiting 10 seconds
+2024-11-09 23:46:28 s6-supervise (child): fatal: unable to exec run: No such file or directory
+2024-11-09 23:46:28 s6-supervise utils: warning: unable to spawn ./run - waiting 10 seconds
+2024-11-09 23:46:38 s6-supervise (child): fatal: unable to exec run: No such file or directory
+2024-11-09 23:46:38 s6-supervise utils: warning: unable to spawn ./run - waiting 10 seconds
+2024-11-09 23:46:48 s6-supervise (child): fatal: unable to exec run: No such file or directory
+2024-11-09 23:46:48 s6-supervise utils: warning: unable to spawn ./run - waiting 10 seconds
+2024-11-09 23:46:58 s6-supervise (child): fatal: unable to exec run: No such file or directory
+2024-11-09 23:46:58 s6-supervise utils: warning: unable to spawn ./run - waiting 10 seconds
+2024-11-09 23:47:08 s6-supervise (child): fatal: unable to exec run: No such file or directory
+2024-11-09 23:47:08 s6-supervise utils: warning: unable to spawn ./run - waiting 10 seconds
